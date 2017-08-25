@@ -20,3 +20,5 @@ This assumes that your source directory has a `bin` and `lib` directory in it.  
     /* include bar.js */
 
 This will tell the file to look for `/myproject/static/js/lib/bar.js` and inline it at the top of the file.
+
+An optional third option, if set to a true value, will disable minification of the javascript output, which can be useful for debugging.
