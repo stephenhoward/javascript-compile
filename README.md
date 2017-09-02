@@ -13,6 +13,10 @@ A preprocessor that minifies and allows for includes in js files
 
     Javascript::Compile::compile_js( '/myproject/static/js' => '/myproject/var/static/js' );
 
+Alternatively you can have multiple input directories output to a single output directory:
+
+    Javascript::Compile::compile_js( [ '/myproject/static/js','/myproject/other/js' ] => '/myproject/var/static/js' );
+
 ## Setup
 
 This assumes that your source directory has a `bin` and `lib` directory in it.  It will run through all the files in `bin` and minify them.  Those files may include files from the `lib` directory like so:
